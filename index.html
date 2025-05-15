@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chandra Kasera - Education Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e0f5e6;
+      color: #1b5e20;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 5px;
+    }
+
+    .contact-info {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .profile-photo {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .profile-photo img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #4caf50;
+    }
+
+    .education-dialogue {
+      padding: 20px;
+      background-color: #c8e6c9;
+      margin: 20px;
+      border-left: 4px solid #388e3c;
+    }
+
+    .gallery {
+      padding: 20px;
+    }
+
+    .gallery h2 {
+      text-align: center;
+    }
+
+    .gallery img, .gallery video {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .auth-forms {
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .form-box {
+      display: none;
+      background: #f1f8e9;
+      padding: 20px;
+      border: 2px solid #81c784;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .form-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-box button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .toggle-btns {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .toggle-btns button {
+      margin: 5px;
+      padding: 8px 15px;
+      background-color: #66bb6a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Chandra Kasera</h1>
+    <div class="contact-info">📞 9767501907</div>
+  </header>
+
+  <div class="profile-photo">
+    <img src="https://via.placeholder.com/180" alt="Profile Photo" />
+    <!-- तपाईंको फोटो URL यहाँ राख्न सक्नुहुन्छ -->
+  </div>
+
+  <section class="education-dialogue">
+    <h2>📚 Education Dialogue</h2>
+    <p>
+      शिक्षा जीवनको मेरुदण्ड हो। शिक्षा बिना कुनै पनि समाजको उन्नति सम्भव छैन। 
+      ज्ञानको उज्यालोले मात्र अन्धकारलाई परास्त गर्न सकिन्छ। शिक्षाले मात्र मानिसलाई 
+      आत्मनिर्भर, विवेकशील, र सभ्य बनाउँछ। आजको युगमा डिजिटल साक्षरताले 
+      हाम्रो भविष्य सुनिश्चित गर्छ। तसर्थ, प्रत्येक व्यक्तिले शिक्षामा लगानी 
+      गर्नु अत्यन्त जरुरी छ।
+    </p>
+  </section>
+
+  <section class="gallery">
+    <h2>🖼️ Photo / Video Gallery</h2>
+    <div style="text-align: center;">
+      <img src="https://via.placeholder.com/300x200" alt="Photo 1" />
+      <img src="https://via.placeholder.com/300x200" alt="Photo 2" />
+      <video controls src="https://www.w3schools.com/html/mov_bbb.mp4" width="300"></video>
+    </div>
+  </section>
+
+  <section class="auth-forms">
+    <h2>🔐 Login / Signup</h2>
+    <div class="toggle-btns">
+      <button onclick="toggleForm('login')">Login</button>
+      <button onclick="toggleForm('signup')">Signup</button>
+    </div>
+
+    <div id="login" class="form-box">
+      <h3>Login</h3>
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button>Login</button>
+    </div>
+
+    <div id="signup" class="form-box">
+      <h3>Signup</h3>
+      <input type="text" placeholder="Full Name" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button>Register</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Chandra Kasera. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleForm(formId) {
+      document.getElementById('login').style.display = 'none';
+      document.getElementById('signup').style.display = 'none';
+      document.getElementById(formId).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
